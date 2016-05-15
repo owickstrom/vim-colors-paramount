@@ -38,6 +38,11 @@ Based on the [pencil][] and [off][] colorschemes.
 [pencil]: https://github.com/reedes/vim-colors-pencil
 [off]: https://github.com/reedes/vim-colors-off
 
+## Contributions
+
+If you find any problems with this color scheme please post an Issue here on
+GitHub. Thanks!
+
 ## License
 
 Original license from pencil: [MIT](LICENSE)
