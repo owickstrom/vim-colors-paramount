@@ -2,6 +2,18 @@
 
 A minimal colorscheme for Vim that only puts emphasis on the paramount.
 
+## Screenshots
+
+*Computer Modern TypeWriter* font on light and dark backgrounds:
+
+![](screenshots/light-cmu.png)
+![](screenshots/dark-cmu.png)
+
+*Courier* font on light and dark backgrounds:
+
+![](screenshots/light-courier.png)
+![](screenshots/dark-courier.png)
+
 ## Installation
 
 Simply copy the color scheme file to your `~/.vim/colors`
