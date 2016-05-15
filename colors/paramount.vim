@@ -110,7 +110,7 @@ hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:norm_subtle})
+call s:h("Type",          {"fg": s:norm})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
