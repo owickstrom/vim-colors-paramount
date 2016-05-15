@@ -40,4 +40,4 @@ Based on the [pencil][] and [off][] colorschemes.
 
 ## License
 
-[MIT](LICENSE)
+Original license from pencil: [MIT](LICENSE)
