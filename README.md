@@ -1,4 +1,4 @@
-# vim-colors-paramount
+# Paramount
 
 A minimal colorscheme for Vim that only puts emphasis on the paramount.
 
