@@ -47,8 +47,8 @@ let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 
 if &background == "dark"
   let s:bg              = s:black
-  let s:bg_subtle       = s:light_black
-  let s:bg_very_subtle  = s:subtle_black
+  let s:bg_subtle       = s:lighter_black
+  let s:bg_very_subtle  = s:light_black
   let s:norm            = s:lighter_gray
   let s:norm_subtle     = s:medium_gray
   let s:purple          = s:light_purple
@@ -100,9 +100,10 @@ call s:h("Statement",     {"fg": s:norm_subtle})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
-hi! link Operator         Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
+
+call s:h("Operator",      {"fg": s:norm, "cterm": "bold", "gui": "bold"})
 
 call s:h("PreProc",     {"fg": s:norm_subtle})
 hi! link Include          PreProc
