@@ -28,6 +28,7 @@ let s:lighter_black   = { "gui": "#545454", "cterm": "240" }
 let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
 let s:light_gray      = { "gui": "#B2B2B2", "cterm": "249" }
 let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
+let s:lightest_gray   = { "gui": "#DADADA", "cterm": "253" }
 let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
 let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
@@ -48,25 +49,25 @@ let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 if &background == "dark"
   let s:bg              = s:black
   let s:bg_subtle       = s:lighter_black
-  let s:bg_very_subtle  = s:light_black
+  let s:bg_very_subtle  = s:subtle_black
   let s:norm            = s:lighter_gray
   let s:norm_subtle     = s:medium_gray
   let s:purple          = s:light_purple
   let s:cyan            = s:light_cyan
   let s:green           = s:light_green
   let s:red             = s:light_red
-  let s:visual          = s:lighter_black
+  let s:visual          = s:light_purple
 else
   let s:bg              = s:actual_white
   let s:bg_subtle       = s:light_gray
-  let s:bg_very_subtle  = s:lighter_gray
+  let s:bg_very_subtle  = s:lightest_gray
   let s:norm            = s:light_black
   let s:norm_subtle     = s:medium_gray
   let s:purple          = s:dark_purple
   let s:cyan            = s:dark_cyan
   let s:green           = s:dark_green
   let s:red             = s:dark_red
-  let s:visual          = s:light_blue
+  let s:visual          = s:dark_purple
 endif
 
 " https://github.com/noahfrederick/vim-hemisu/
@@ -142,7 +143,7 @@ call s:h("StatusLine",    {"bg": s:bg_very_subtle})
 call s:h("StatusLineNC",  {"bg": s:bg_very_subtle, "fg": s:medium_gray})
 call s:h("VertSplit",     {"bg": s:bg_very_subtle, "fg": s:bg_very_subtle})
 call s:h("Title",         {"fg": s:dark_blue})
-call s:h("Visual",        {"bg": s:visual})
+call s:h("Visual",        {"fg": s:norm, "bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_subtle})
 call s:h("WarningMsg",    {"fg": s:red})
 call s:h("WildMenu",      {"fg": s:bg, "bg": s:norm})
