@@ -4,15 +4,15 @@ A minimal colorscheme for Vim that only puts emphasis on the paramount.
 
 ## Screenshots
 
-*Computer Modern TypeWriter* font on light and dark backgrounds:
+*Latin Modern Mono* font on light and dark backgrounds:
 
-![](screenshots/light-cmu.png)
-![](screenshots/dark-cmu.png)
+![](screenshots/latin-modern-light.png)
+![](screenshots/latin-modern-dark.png)
 
-*Courier* font on light and dark backgrounds:
+*Monaco* font on light and dark backgrounds:
 
-![](screenshots/light-courier.png)
-![](screenshots/dark-courier.png)
+![](screenshots/monaco-light.png)
+![](screenshots/monaco-dark.png)
 
 ## Installation
 
