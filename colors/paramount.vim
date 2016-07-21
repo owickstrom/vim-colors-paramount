@@ -46,6 +46,8 @@ let s:light_purple    = { "gui": "#a790d5", "cterm": "140" }
 let s:yellow          = { "gui": "#F3E430", "cterm": "11"  }
 let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 
+let s:background = &background
+
 if &background == "dark"
   let s:bg              = s:black
   let s:bg_subtle       = s:lighter_black
@@ -83,6 +85,12 @@ function! s:h(group, style)
 endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
+
+" restore &background's value in case changing Normal changed &background (:help :hi-normal-cterm)
+if &background != s:background
+   execute "set background=" . s:background
+endif
+
 call s:h("Cursor",        {"bg": s:purple, "fg": s:norm })
 call s:h("Comment",       {"fg": s:bg_subtle, "gui": "italic"})
 
