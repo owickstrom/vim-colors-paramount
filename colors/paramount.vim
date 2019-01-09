@@ -206,6 +206,18 @@ call s:h("SyntasticWarning",        {"bg": s:yellow, "fg": s:black, "gui": "bold
 call s:h("SyntasticErrorSign",      {"fg": s:red})
 call s:h("SyntasticError",          {"bg": s:red, "fg": s:white, "gui": "bold", "cterm": "bold"})
 
+" Lightline
+call s:h("LightlineBG1",    {"fg": s:bg})
+call s:h("LightlineBG2",    {"fg": s:bg_very_subtle})
+
+call s:h("LightlineGray",   {"fg": s:bg_subtle})
+call s:h("LightlineYellow", {"fg": s:yellow})
+call s:h("LightlineCyan",   {"fg": s:light_cyan})
+call s:h("LightlineOrange", {"fg": s:orange})
+call s:h("LightlineGreen",  {"fg": s:light_green})
+call s:h("LightlinePurple", {"fg": s:purple})
+call s:h("LightlineRed",    {"fg": s:red})
+
 " Neomake
 hi link NeomakeWarningSign	SyntasticWarningSign
 hi link NeomakeErrorSign	SyntasticErrorSign
